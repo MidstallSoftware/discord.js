@@ -193,6 +193,7 @@ class Webhook {
     }
 
     const { data, files } = await messagePayload.resolveFiles();
+    if (files.length > 0) throw new Error('Unsupported: cannot attach files')
     const d = await this.client.api.webhooks(this.id, this.token).post({
       data,
       files,

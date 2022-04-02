@@ -4,6 +4,7 @@
     // Type Checking
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
+    "allowJs": true,
     // if true: conflicts with discord-api-types
     "exactOptionalPropertyTypes": false,
     "noFallthroughCasesInSwitch": true,
@@ -36,7 +37,7 @@
     // Language and Environment
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": ["ESNext"],
+    "lib": ["ESNext", "DOM"],
     "target": "ES2020",
     "useDefineForClassFields": true,
 
@@ -46,5 +47,7 @@
     // Completeness
     "skipLibCheck": false,
     "skipDefaultLibCheck": true
-  }
+  },
+  "include": ["src", "test"],
+  "exclude": ["node_modules"]
 }

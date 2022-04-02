@@ -3,7 +3,7 @@
 const { Buffer } = require('node:buffer');
 const stream = require('node:stream');
 const fetch = require('node-fetch');
-const { Error: DiscordError, TypeError } = require('../errors');
+const { TypeError } = require('../errors');
 const Invite = require('../structures/Invite');
 
 /**
